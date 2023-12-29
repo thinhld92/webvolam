@@ -1,0 +1,32 @@
+.bg-menu-theme .menu-sub > .menu-item > .menu-link:before {
+    display: none;
+}
+
+.app-brand-logo.demo {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 4rem;
+    height: 3rem;
+}
+
+.app-brand-logo img,
+.app-brand-logo svg {
+    display: block;
+    width: 100%;
+}
+
+.was-validated.custom-validate .invalid-feedback {
+    display: block;
+}
+
+.was-validated.custom-validate .form-control.custom-invalid {
+    border-color: var(--bs-form-invalid-color) !important;
+}
+
+.menu-vertical .menu-icon {
+    width: 2rem !important;
+}
