@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Login - {{__('Võ lâm tiên kiếm')}}</title>
+    <title>Đăng nhập - {{ config('app.name', 'Võ Lâm Tiên Kiếm') }}</title>
 
     <meta name="description" content="" />
 
@@ -103,7 +103,7 @@
               </a>
             </div>
             <!-- /Logo -->
-            <h3 class="mb-1">Chào bạn đến với Võ Lâm Tiên Kiếm 👋</h3>
+            <h3 class="mb-1">Chào bạn đến với {{ config('app.name', 'Võ Lâm Tiên Kiếm') }} 👋</h3>
             <p class="mb-4">Vui lòng đăng nhập để được hỗ trợ</p>
 
             <form
@@ -160,6 +160,12 @@
               </div>
               <button class="btn btn-primary d-grid w-100">Đăng nhập</button>
             </form>
+            <p class="text-center">
+              <span>Chưa có tài khoản?</span>
+              <a href="{{ route('register') }}">
+                <span>Tạo tài khoản</span>
+              </a>
+            </p>
 
            
           </div>
